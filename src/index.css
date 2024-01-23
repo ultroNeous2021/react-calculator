@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calculator-wrapper{
+  @apply min-h-screen flex items-center justify-center
+}
+
+.calculator{
+  @apply  min-h-96 w-80 border border-gray-300 p-4 bg-blue-300 rounded-lg shadow-lg
+}
+
+input{
+  @apply w-full text-right py-4 px-5 text-2xl bg-transparent text-white rounded-lg shadow-lg border border-b-slate-50
+}
+
+.buttons{
+  @apply grid grid-cols-4 gap-4 mt-4
+}
+
+button{
+@apply transition duration-300 active:translate-x-1 text-xl 
+}
+.text, .number, .operator, .danger, .success, .alert{
+  @apply  text-white rounded-lg p-2
+}
+.number{
+  @apply  bg-slate-500
+}
+
+.operator {
+  @apply bg-blue-500
+}
+
+.danger{
+  @apply bg-red-600
+}
+.success{
+  @apply bg-green-600
+}
+.alert{
+  @apply bg-yellow-400 
+}
+
+
+
+/* @apply flex justify-center items-center bg-blue-300 h-96 w-80 mx-auto rounded-lg shadow-lg */
